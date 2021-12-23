@@ -15,6 +15,7 @@ router.post( '/new', [  // Ruta, arraglo de middlewares, controlador
 ], crearUsuario );  
 
 // Login de usuario //
+//***************** */
 router.post( '/', [
     check( 'email', 'El email es obligatorio').isEmail(),
     check( 'password', 'El password es obligatorio').isLength({ min: 6 }),
